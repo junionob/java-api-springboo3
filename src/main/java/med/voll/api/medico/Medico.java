@@ -13,7 +13,7 @@ import med.voll.api.endereco.Endereco;
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Table(name = "medicos")
-@Entity(name = "medico")
+@Entity
 public class Medico {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

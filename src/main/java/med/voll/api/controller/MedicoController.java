@@ -24,7 +24,6 @@ public class MedicoController {
     @Transactional
     @PostMapping
     public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados){
-
         repository.save(new Medico(dados));
     }
 
